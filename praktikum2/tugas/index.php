@@ -10,7 +10,7 @@
 
 <body>
     <div class="container px-5 my-5">
-        <form id="contactForm" action="nilai_mahasiswa.php" method="get">
+        <form id="contactForm" action="nilai_mahasiswa.php" method="post">
             <div class="mb-3">
                 <label class="form-label" for="namaLengkap">Nama Lengkap</label>
                 <input class="form-control" name="nama" id="namaLengkap" type="text" placeholder="Nama Lengkap" data-sb-validations="required" required />

@@ -13,12 +13,12 @@
 
         <?php
         //periksa metode pengiriman data (post atau get)
-        if ($_SERVER["REQUEST_METHOD"] == "GET") {
-            $nama = isset($_GET['nama']) ? $_GET['nama'] : '';
-            $mata_kuliah = ($_GET['mataKuliah']) ? $_GET['mataKuliah'] : '';
-            $nilai_uts = isset($_GET['nilaiuts']) ? $_GET['nilaiuts'] : '';
-            $nilai_uas = isset($_GET['nilaiuas']) ? $_GET['nilaiuas'] : '';
-            $nilai_tugas = isset($_GET['nilaitugas']) ? $_GET['nilaitugas'] : '';
+        if ($_SERVER["REQUEST_METHOD"] == "POST") {
+            $nama = isset($_POST['nama']) ? $_POST['nama'] : '';
+            $mata_kuliah = ($_POST['mataKuliah']) ? $_POST['mataKuliah'] : '';
+            $nilai_uts = isset($_POST['nilaiuts']) ? $_POST['nilaiuts'] : '';
+            $nilai_uas = isset($_POST['nilaiuas']) ? $_POST['nilaiuas'] : '';
+            $nilai_tugas = isset($_POST['nilaitugas']) ? $_POST['nilaitugas'] : '';
 
             $dataNilaiMahasiswa = array(
                 'nama : ' => $nama,
